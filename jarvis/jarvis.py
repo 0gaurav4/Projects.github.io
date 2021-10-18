@@ -8,7 +8,7 @@ import random
 import cv2  #pip install opencv-python
 import smtplib
 from requests import get
-import pywhatkit
+import pywhatkit #pip install pywhatkit
 import sys
 
 
