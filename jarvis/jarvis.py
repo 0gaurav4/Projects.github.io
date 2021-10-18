@@ -41,8 +41,8 @@ def wishMe():
         speak("Good Night!")
         print("Good Night!")
 
-    print("I am your 'desktop voice assistant'. Please tell me how can i help you...")
-    speak("I am your 'desktop voice assistant'. Please tell me how can i help you...")
+    print("Welcome I am your 'Desktop Voice Assistant'. Please tell me how can i help you... or ask me... What you do for me?")
+    speak("Welcome I am your 'Desktop Voice Assistant'. Please tell me how can i help you... or ask me... What you do for me?")
 
 #it takes microphone input from the user and returns string output
 def takeCommand():
@@ -164,12 +164,18 @@ if __name__ == "__main__":
        elif 'send message' in query:
            pywhatkit.sendwhatmsg("+9170884817", "this is testing protocol",2,25)
 
+       elif 'what you do for me' in query:
+           print("I am doing for you... \n\n (1)Search according to wikipedia \t (2)Google \t (3)Open apps like(command prompt, notepad, vscode, music)  \n\n(4)Open Youtube \t (5)Tell me the time \t (6)IP adress \t (7)and Exit ")
+           speak("I am doing for you... \n\n Search according to wikipedia \t Google \t Open appslike(command prompt, notepad, vscode, music) \n\n Open Youtube \t Tell me the time \n\n IP adress \t Exit ")
+
+
        #to exit
-       elif 'no thanks' in query:
-           speak("Thanks For using me, and have a good day!")
+       elif 'exit' in query:
+           print("Thanks For using me, have a good day!")
+           speak("Thanks For using me, have a good day!")
            sys.exit()
 
-       speak("Do you have any other work!...")
+       #speak("Do you have any other work!...")
                
 
 
