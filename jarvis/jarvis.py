@@ -77,8 +77,8 @@ def wishMe():
         print(f"Good Night, its {tt}")
         speak(f"Good Night, its {tt}")
     
-    print(f"Hi, Your 'Desktop Voice Assistant' here. There's a lot I can help with. Here are few popular actions...\n Try saying \n - Good morning \n - About Project  \n - Tell me today's News \n - Can you do Some Calculations")
-    speak(f"Hi, Your 'Desktop Voice Assistant' here. There's a lot I can help with. Here are few popular actions...\n Try saying \n Good morning \n or  About Project \n or Tell me today's News \n or Can you do Some Calculations")
+    print(f"Hi, Your 'Desktop Voice Assistant' here. There's a lot I can help with. Here are few popular actions...\n Try saying \n - Good morning \n - About Project  \n - What is your name \n - Can you do Some Calculations")
+    speak(f"Hi, Your 'Desktop Voice Assistant' here. There's a lot I can help with. Here are few popular actions...\n Try saying \n Good morning \n or  About Project \n or What is your name \n or Can you do Some Calculations")
 
 def username():
     print("What should i call you?")
@@ -90,6 +90,8 @@ def username():
     speak("Welcome ")
     speak(uname)
     print("".center(columns))
+    print("Can i read top 3 Today's News?")
+    speak("Can i read top 3 Today's News?")
 
 #send email
 def sendEmail(to, content):
