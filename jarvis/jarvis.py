@@ -19,7 +19,7 @@ import pyautogui   #pip install PyAutoGUI
 import instaloader
 import PyPDF2  #pip install PyPDF2
 from bs4 import BeautifulSoup   #pip install bs4   #pip install beautifulsoup4
-from pywikihow import search_wikihow   #pip install pywikihow 
+# from pywikihow import search_wikihow   #pip install pywikihow 
 import psutil   #pip install psutil
 import speedtest    #pip install speedtest-cli
 
@@ -483,29 +483,29 @@ if __name__ == "__main__":
            print("Try saying... Suggestions")
            speak("Try saying... Suggestions")
 
-#how to do
-       elif 'activate how to do' in query or 'how to do' in query:
-           print("How to do mode is activated.")
-           speak("How to do mode is activated.")
-           while True:
-               print("Please tell me what you want to know?")
-               speak("Please tell me what you want to know?")
-               how = takeCommand()
-               try:
-                   if 'exit' in how or 'close' in how:
-                       print("okay, how to do is closed. Try saying... Something search according to wikipedia")
-                       speak("okay, how to do is closed. Try saying... Something search according to wikipedia")
-                       break
-                   else:
-                       max_results = 1
-                       how_to = search_wikihow(how, max_results)
-                       assert len(how_to) == 1
-                       how_to[0].print()
-                       print(how_to[0].summary)
-                       speak(how_to[0].summary)
-               except Exception as e:
-                   print("Sorry, i am not able to find this.")
-                   speak("Sorry, i am not able to find this.")
+# #how to do
+#        elif 'activate how to do' in query or 'how to do' in query:
+#            print("How to do mode is activated.")
+#            speak("How to do mode is activated.")
+#            while True:
+#                print("Please tell me what you want to know?")
+#                speak("Please tell me what you want to know?")
+#                how = takeCommand()
+#                try:
+#                    if 'exit' in how or 'close' in how:
+#                        print("okay, how to do is closed. Try saying... Something search according to wikipedia")
+#                        speak("okay, how to do is closed. Try saying... Something search according to wikipedia")
+#                        break
+#                    else:
+#                        max_results = 1
+#                        how_to = search_wikihow(how, max_results)
+#                        assert len(how_to) == 1
+#                        how_to[0].print()
+#                        print(how_to[0].summary)
+#                        speak(how_to[0].summary)
+#                except Exception as e:
+#                    print("Sorry, i am not able to find this.")
+#                    speak("Sorry, i am not able to find this.")
 
 #socialmedia
        elif 'social media' in query or 'socialmedia' in query:
